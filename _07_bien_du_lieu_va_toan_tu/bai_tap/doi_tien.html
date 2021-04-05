@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h4>Amount</h4>
+        <input type="text" id="Amount">
+    <h4>From Currency</h4>
+        <select id="tienViet">
+            <option>VND</option>
+            <option>USD</option>
+        </select>
+        <h4>To Currency</h4>
+    <select id="tienUsd">
+        <option>UND</option>
+        <option>VSD</option>
+    </select>
+    <input type="button" value="convert" onclick="Click()"><br>
+ <h6 id="result"> Result </h6>
+    <script>
+        function Click() {
+            let a=parseInt(document.getElementById("Amount").value);
+            let b=document.getElementById("tienViet").value;
+            let c=document.getElementById("tienUsd").value;
+            if (b=="VND"&& c=="USD"){
+                let tong=a/23000;
+                document.getElementById("result").innerHTML=tong;
+            }else{
+                let total=a*23000;
+                document.getElementById("result").innerHTML=total;
+            }
+        }
+    </script>
+</body>
+</html>
