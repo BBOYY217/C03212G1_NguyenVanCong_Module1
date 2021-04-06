@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phut=prompt("nhap phut");
+    let tienPhaiTra=0;
+        if(phut<50){
+            tienPhaiTra=phut*600;
+            alert("tien tra: "+tienPhaiTra);
+        }else if (phut<200){
+            //phut = 50 + (phut-50)
+            tienPhaiTra=(50*600)+((phut-50)*400);
+            alert(" tien tra : "+ tienPhaiTra);
+        }else{
+            tienPhaiTra=(50*600)+(150*400)+(phut-200)*200;
+            alert("tien tra :"+tienPhaiTra);
+        }
+</script>
+</body>
+</html>
