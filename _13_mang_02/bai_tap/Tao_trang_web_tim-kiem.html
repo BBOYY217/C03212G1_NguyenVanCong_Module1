@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="nhap tim kiem" id="eng">
+<input type="button" value="tìm kiếm" onclick="dich()">
+<p id="vie">nghia la</p>
+<script>
+    function dich() {
+        let english = ['blue', 'red'];
+        let vietsub = ['xanh', 'do'];
+        let a = document.getElementById("eng").value;
+        for (let i = 0; i < vietsub.length; i++) {
+            console.log(a);
+            if ( vietsub[i] == a) {
+                document.getElementById("vie").innerText = english[i];
+                break;
+            }else {
+                document.getElementById("vie").innerText= "khong y nghia";
+            }
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let x = [-3, 5, 1, 3, 2, 10];
+    // let first = 0;
+    // let last= x.length -1;
+    // while(first<last){
+    //     let b = x[first];
+    //     x[first]=x[last];
+    //     x[last]=b;
+    //     first++;
+    //     last--;
+    // }document.write(x)
+
+    // let arr=new Array();
+    // let arr1=Array();
+    // let arr2=[];
+
+
+
+    let arr= [-3, 5, 1, 3, 2, 10];
+    let viTriDau=0;
+    let viTriCuoi=arr.length-1;
+    for (let i = 0; i < arr.length/2; i++) {
+        let tam;
+        tam=arr[viTriDau];
+        arr[viTriDau]=arr[viTriCuoi];
+        arr[viTriCuoi]=tam;
+        viTriDau++;
+        viTriCuoi--;
+
+
+    }
+    alert(arr)
+    //
+    // //khai bao mang:
+    // let arr=new Array();
+    // let arr1= Array();
+    // let arr2=[];
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

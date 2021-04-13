@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = new Array(5);
+    for (let i = 0; i < 5; i++) {
+        arr[i] = parseInt(prompt("nhap gia tri"));
+    }
+    let max = arr[0];
+    let tong = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+        tong = tong + arr[i];
+    }
+    alert("so lon nhat " + max);
+    let tb = 0;
+    tb = tong / 5;
+    alert('diem trung binh' + tb);
+</script>
+</body>
+</html>
