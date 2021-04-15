@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<button type="button"onclick="taoHam(parseInt(prompt('nhap vap so ')),parseInt(prompt('nhap vap so ')))">ktr</button>-->
+<script>
+    function taoHam(a, b) {
+        let sum = a + b;
+        if (a > b) {
+            alert("thong bao a lon hon co tong la: " + sum);
+        } else if (a <= b) {
+            alert("thong bao a nho hon hoan bang co tong la: " + sum);
+        }
+    }
+    let x =parseInt(prompt("nhap so"));
+    let y =parseInt(prompt("nhap so"));
+    alert(taoHam(x,y));
+</script>
+</body>
+</html>
