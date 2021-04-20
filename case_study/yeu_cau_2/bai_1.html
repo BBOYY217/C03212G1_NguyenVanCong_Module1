@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luong=parseInt(prompt("Nhap luong nhan vien"));
+    let thue=0;
+    if (luong<=7000000){
+        thue+=luong*0.05;
+        alert("thue thu nhap"+thue)
+    }else if (luong<=15000000){
+        thue+=luong*0.1;
+        alert("thue thu nhap"+thue)
+    }else if (luong>15000000) {
+        thue += luong * 0.2;
+        alert("thue thu nhap" + thue)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h = 5
+    for (let a = 1; a <= h; a++) {
+        document.write("&nbsp;")
+    }
+    document.write("*" + "</br>")
+    for (let i = 1; i <= h; i++) {
+        for (var k = 1; k <= h - i; k++) {
+            document.write("&nbsp;")
+        }
+        document.write("*")
+        for (let j = 1; j <= 2 * i - 1; j++) {
+            document.write("&nbsp;")
+        }
+        document.write("*")
+        document.write("</br>")
+    }
+</script>
+</body>
+</html>

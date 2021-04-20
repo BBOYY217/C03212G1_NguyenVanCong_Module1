@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="300" height="200"></canvas>
+<script>
+    class HinhChuNhat{
+        constructor(dai,rong) {
+            this.dai=dai;
+            this.rong=rong;
+        }
+        getDai(){
+            return this.dai;
+        }
+        setDai(daiMoi){
+            this.dai=daiMoi;
+        }
+        getRong(){
+            return this.rong;
+        }
+        setRong(rongMoi){
+            this.rong=rongMoi;
+        }
+        tinhDienTich(){
+            return this.dai*this.rong;
+        }
+        tinhChuVi(){
+            return (this.dai+this.rong)*2;
+        }
+        hienThiHinhChuNhat(x,y){
+            let c = document.getElementById("myCanvas");
+            let ctx = c.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(x, y, this.rong, this.dai);
+        }
+    }
+
+    // let dai=parseInt(prompt("nhap chieu dai hinh chu nhat"));
+    // let rong=parseInt(prompt("nhap chieu rong hinh chu nhat"));
+    // let hinhChuNhat = new HinhChuNhat(dai,rong);
+    let hinh=new HinhChuNhat(10,5);
+    hinh.setDai(20);
+    alert(hinh.tinhChuVi());
+    alert(hinh.tinhDienTich());
+    hinh.setDai(300);
+    hinh.setRong(200)
+    hinh.hienThiHinhChuNhat(0,0)
+
+
+
+</script>
+</body>
+</html>
