@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let b = [];
+    let ketQua = 0;
+    let n = parseInt(prompt("nhap chieu dai cua mang"));
+    let a = new Array(n);
+    for (let i = 0; i < a.length; i++) {
+        a[i] = parseInt(prompt("nhap so"));
+    }
+    for (let i = 0; i < a.length; i++) {
+        ketQua += a[i];
+        b.push(ketQua);
+    }
+    alert("mang a dc khoi tao " + a + "\n" +
+        "mang b dc khoi tao " + b);
+
+
+</script>
+</body>
+</html>
