@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhap vao chuoi thu nhat");
+    let str1 = prompt("nhap vao chuoi thu hai");
+    let arr = "";
+    let count=0;
+    let ketQua="";
+    for (let i = 0; i < str.length; i++) {
+        if (str1.indexOf(str[i]) !== -1 && arr.indexOf(str[i]) == -1) {
+            arr+=str[i];
+        }
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (soSanh(arr[i], str) > soSanh(arr[i], str1)) {
+            count = soSanh(arr[i], str1);
+        } else {
+            count = soSanh(arr[i], str);
+        }
+        ketQua+= arr[i]+" xuat hien "+count +" lan \n";
+    }
+    alert("chuoi thu nhat : "+str+"\n" +
+        "chuoi thu hai :"+str1+"\n" +
+        "2 chuoi co "+arr.length+" phan tu chung \n" +
+        ketQua)
+
+    function soSanh(kyTu, mang) {
+        let count = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] == kyTu) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+
+</script>
+</body>
+</html>
+a

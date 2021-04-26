@@ -6,18 +6,28 @@
 </head>
 <body>
 <script>
-    let x = 4;
-    let y = 5;
-    for (let i = 0; i < x; i++) {
-        for (let j = 0; j < y; j++) {
-            if (i == 0 || i == 3 || j == 0 || j == 4) {
-                document.writeln("*")
-            } else {
-                document.writeln("&nbsp","&nbsp");
+    let c = "";
+    let cd = parseInt(prompt("nhap vao chieu dai"))
+    let cr = parseInt(prompt("nhap vao chieu rong"))
+    for (let a = 0; a < cd ; a++) {
+        if (a == 0 || a == cd-1) {
+            for (let i = 0; i < cr; i++) {
+                c += "*";
+            }
+        }else {
+            for (let b =0;b<cr;b++){
+                if(b==0 || b==cr-1){
+                    c+="*";
+                }else {
+                    c+=" ";
+                }
             }
         }
-        document.write("</br>");
+
+        c += '<br>';
     }
+
+    document.write('<pre>' + c + '</pre>')
 </script>
 </body>
 </html>

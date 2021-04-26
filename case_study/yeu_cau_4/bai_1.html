@@ -6,26 +6,19 @@
 </head>
 <body>
 <script>
-  let chuoi=prompt("nhap vao chuoi bat ky");
-  let arr=chuoi.split(" ");
-  let arr3=[];
-
-  let arr2=[];
-  for (let i = 0; i < arr.length; i++) {
-    if(arr[i]!==""){
-      arr2.push(arr[i]);
+    let chuoi = prompt("nhap vao chuoi bat ky");
+    let arr = chuoi.split(" ");
+    let arr3 = [];
+    let arr2 = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== "") {
+            arr2.push(arr[i]);
+        }
     }
-  }
-
-  for (let i = 0; i < arr2.length; i++) {
-   arr3[i] = arr2[i].charAt(0).toUpperCase()+arr2[i].substring(1, arr2[i].length ).toLowerCase();
-  }
-  alert(arr3.join(" "))
-
-
-
-
-
+    for (let i = 0; i < arr2.length; i++) {
+        arr3[i] = arr2[i].charAt(0).toUpperCase() + arr2[i].substring(1, arr2[i].length).toLowerCase();
+    }
+    alert(arr3.join(" "))
 </script>
 </body>
 </html>
